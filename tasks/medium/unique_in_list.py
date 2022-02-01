@@ -12,6 +12,11 @@ is_unique([2, 1, 5, 4, 2]) -> False
 
 def is_unique(array: list) -> bool:
     result = None
+    for numb in array:
+        if array.count(numb) == 1:
+            result = True
+        else:
+            result = False
     return result
 
 
